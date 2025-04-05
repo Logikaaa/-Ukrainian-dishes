@@ -1,0 +1,140 @@
+html, body {
+    font-family: 'Arial', sans-serif;
+    background-color: navajowhite;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: lightpink;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 24px;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.ukr-k {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.ukr {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    background: #C4C4C4;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 10px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.button:hover {
+    background-color: #a6a6a6;
+}
+
+.recipe-details, .contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.preparation-text, .calories-text {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+footer img {
+  
+    margin-top: 10px;
+}
+
+address {
+    font-style: normal;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        font-size: 24px;
+        margin: 5px;
+        text-align: center;
+    }
+    .ukr-k {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .recipe-details, .contact {
+        margin: 10px;
+    }
+
+    .button {
+        width: 90%;
+    }
+}
